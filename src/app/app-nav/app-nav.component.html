@@ -1,8 +1,37 @@
-<p>
-  <a routerLink="/comp1/comp1-sub1" routerLinkActive="active">Compoment 1 Sub 1</a>
-  <a routerLink="/comp1/comp1-sub2" routerLinkActive="active">Compoment 1 Sub 2</a>
-  <a routerLink="/comp1/comp1-sub3" routerLinkActive="active">Compoment 1 Sub 3</a>
-  <a routerLink="/comp2/comp2-sub1" routerLinkActive="active">Compoment 2 Sub 1</a>
-  <a routerLink="/comp2/comp2-sub2" routerLinkActive="active">Compoment 2 Sub 2</a>
-  <a routerLink="/comp2/comp2-sub3" routerLinkActive="active">Compoment 2 Sub 3</a>
-</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="">{{title}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" id="navbarC1Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+          Component 1
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarC1Dropdown" ngbDropdownMenu>
+          <a class="dropdown-item" routerLink="/comp1/comp1-sub1" routerLinkActive="active">Component 1 Sub 1<span class="sr-only">(current)</span></a>
+          <a class="dropdown-item" routerLink="/comp1/comp1-sub2" routerLinkActive="active">Component 1 Sub 2<span class="sr-only">(current)</span></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/comp1/comp1-sub3" routerLinkActive="active">Component 1 Sub 3<span class="sr-only">(current)</span></a>
+        </div>
+      </li>
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" id="navbarC2Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+          Component 2
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarC2Dropdown" ngbDropdownMenu>
+          <a class="dropdown-item" routerLink="/comp2/comp2-sub1" routerLinkActive="active">Component 2 Sub 1<span class="sr-only">(current)</span></a>
+          <a class="dropdown-item" routerLink="/comp2/comp2-sub2" routerLinkActive="active">Component 2 Sub 2<span class="sr-only">(current)</span></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/comp2/comp2-sub3" routerLinkActive="active">Component 2 Sub 3<span class="sr-only">(current)</span></a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

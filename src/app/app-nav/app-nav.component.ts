@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppNavComponent implements OnInit {
 
+  title = 'AngCliRoute';
+
   constructor() { }
 
   ngOnInit() {
