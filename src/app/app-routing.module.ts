@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'comp2',
     loadChildren: './comp2-mod/comp2-mod.module#Comp2ModModule'
   },
+  {
+    path: 'primeng',
+    loadChildren: './primeng-comps/primeng-comps.module#PrimengCompsModule'
+  },
 
 ];
 

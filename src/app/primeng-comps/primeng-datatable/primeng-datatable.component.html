@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    Family Relationships
+  </div>
+  <div class="card-body">
+    <p-dataTable [value]="family" [rows]="10" [paginator]="true" selectionMode="single" [(selection)]="selectedFamilyMember">
+      <p-column field="relationship" header="Relationship" sortable="true" ></p-column>
+      <p-column field="name" header="Name" sortable="true"></p-column>
+      <p-column field="sex" header="Sex" sortable="true"></p-column>
+      <p-column field="age" header="age" sortable="true"></p-column>
+    </p-dataTable>
+  </div>
+</div>
+

@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    Articles
+  </div>
+  <div class="card-body">
+    <p-dataTable [value]="articles" [rows]="10" [paginator]="true" selectionMode="single" [(selection)]="selectedArticle">
+      <p-column field="id" header="ID" sortable="true" ></p-column>
+      <p-column field="userId" header="User ID" sortable="true"></p-column>
+      <p-column field="title" header="Title" sortable="true"></p-column>
+      <p-column field="body" header="Body" sortable="true"></p-column>
+    </p-dataTable>
+  </div>
+</div>
